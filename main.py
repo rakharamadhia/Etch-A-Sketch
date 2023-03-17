@@ -13,11 +13,11 @@ def move_backward():
 
 
 def turn_left():
-    joni.left(90)
+    joni.left(10)
 
 
 def turn_right():
-    joni.right(90)
+    joni.right(10)
 
 
 screen.listen()
