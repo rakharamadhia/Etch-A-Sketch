@@ -19,10 +19,17 @@ def turn_left():
 def turn_right():
     joni.right(10)
 
+def clear():
+    joni.clear()
+    joni.penup()
+    joni.home()
+    joni.pendown()
+
 
 screen.listen()
 screen.onkey(move_forward, "Up")
 screen.onkey(move_backward, "Down")
 screen.onkey(turn_left, "Left")
 screen.onkey(turn_right, "Right")
+screen.onkey(clear, "c")
 screen.exitonclick()
